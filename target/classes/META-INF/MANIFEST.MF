@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1526655574012
+Build-Jdk: 1.8.0_161
+Built-By: ctoro
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: Empty Camel Blueprint Example
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Empty Camel Blueprint Example [Lab5-AggregatorCTORO]
+Bundle-SymbolicName: Lab5-AggregatorCTORO
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: cl.syachile.bean;uses:="org.apache.camel,org.apache.came
+ l.processor.aggregate";version="1.0.0",cl.syachile.model;uses:="javax.x
+ ml.bind.annotation,org.apache.camel.dataformat.bindy.annotation";versio
+ n="1.0.0"
+Import-Package: cl.syachile.model,javax.xml.bind.annotation,org.apache.c
+ amel;version="[2.17,3)",org.apache.camel.dataformat.bindy.annotation;ve
+ rsion="[2.17,3)",org.apache.camel.processor.aggregate;version="[2.17,3)
+ ",org.apache.camel.spi;version="[2.17,3)",org.osgi.service.blueprint;ve
+ rsion="[1.0.0,2.0.0)"
+Import-Service: org.apache.camel.spi.DataFormatResolver;multiple:=false
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007
